@@ -62,7 +62,7 @@ public class KinectDataHandler : MonoBehaviour
                 
         }
 
-        GameObject FPSCamera = GameObject.Find("RigidBodyFPSController");
+        GameObject FPSCamera = GameObject.Find("Main Camera");
         Vector3 initPos = new Vector3(FPSCamera.transform.position.x,FPSCamera.transform.position.y,FPSCamera.transform.position.z);
         transform.position = initPos;
     }

@@ -49,14 +49,13 @@ public class testBodyView : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        //transform.Rotate(0f, 180f, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        int state = 0;
-
         if (BodyManager == null)
         {
             return;

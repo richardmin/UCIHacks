@@ -133,9 +133,11 @@
      <Compile Include="Assets\Scripts\Balloon.cs" />
      <Compile Include="Assets\Scripts\Book.cs" />
      <Compile Include="Assets\Scripts\InventoryManager.cs" />
+     <Compile Include="Assets\Scripts\Kinect\FPSBodyController.cs" />
      <Compile Include="Assets\Scripts\Kinect\FPSKinectController.cs" />
      <Compile Include="Assets\Scripts\Kinect\HandsController.cs" />
      <Compile Include="Assets\Scripts\Kinect\KinectDataHandler.cs" />
+     <Compile Include="Assets\Scripts\Kinect\OtherFPSBodyController.cs" />
      <Compile Include="Assets\Scripts\Kinect\SpawnAtPosition.cs" />
      <Compile Include="Assets\Scripts\Kinect\testBodyView.cs" />
      <Compile Include="Assets\Scripts\Knife.cs" />
