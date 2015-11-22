@@ -7,6 +7,8 @@ public class SpanishCubes : MonoBehaviour
 {
     private GameObject KinectDataGameObject;
 
+    private GameObject BodyView;
+
     private KinectDataHandler _KinectData;
 
     private const int MoveThreshold = 10;
@@ -17,6 +19,8 @@ public class SpanishCubes : MonoBehaviour
     {
         KinectDataGameObject = GameObject.Find("KinectPlayer");
         _KinectData = KinectDataGameObject.GetComponent<KinectDataHandler>();
+
+        BodyView = GameObject.Find("testBodyView");
     }
 
     // Update is called once per frame
@@ -100,6 +104,8 @@ public class SpanishCubes : MonoBehaviour
                 print("Old Position: " + oldPos);
                 print("Supposed to be new Position: " + newPos);
                 print("Real new Position: " + realNewPos);
+
+                transform.Rotate(BodyView.transform.rotation.eulerAngles);
             }
 
         }

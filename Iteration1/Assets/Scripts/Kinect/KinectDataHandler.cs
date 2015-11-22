@@ -70,8 +70,9 @@ public class KinectDataHandler : MonoBehaviour
         Vector3 initPos = new Vector3(FPSCamera.transform.position.x, FPSCamera.transform.position.y, FPSCamera.transform.position.z);
         //transform.position = initPos;
         transform.position = new Vector3(5.3f, 1.35f, 11f);
+        transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
         transform.Rotate(0f, 180f, 0f);
-
+        
         
     }
 
