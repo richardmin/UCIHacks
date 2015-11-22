@@ -22,12 +22,12 @@ public class MyBalloon : MonoBehaviour {
 	{
 		GameObject objectHit = collision.gameObject;
 		
-		if (objectHit == knife)
-		{
-			//Update Player Inventory with Bubble
+        //if (objectHit == knife)
+        //{
+        //    //Update Player Inventory with Bubble
 			
-			Destroy(this.gameObject);
-		}
+        //    Destroy(this.gameObject);
+        //}
 		
 	}
 }
