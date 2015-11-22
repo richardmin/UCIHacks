@@ -28,15 +28,19 @@ public class FPSKinectController : MonoBehaviour {
 
         foreach (Kinect.Body body in bodies)
         {
-            Kinect.JointType jt_head = Kinect.JointType.Head;
+            Kinect.JointType jt_head = Kinect.JointType.SpineMid;
             Kinect.Joint head;
             if (body.Joints.ContainsKey(jt_head))
             {
                 head = body.Joints[jt_head];
             }
 
+            Vector3 oldPos = new Vector3(transform.position.x, transform.position.x, transform.position.x);
             Vector3 newPos = new Vector3(head.Position.X, head.Position.Y, head.Position.Z);
             transform.position = newPos;
+
+            print("Old FPS Camera position was: " + oldPos);
+            print("New FPS camera position was: " + newPos);
         }
 	}
 }

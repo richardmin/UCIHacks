@@ -48,6 +48,10 @@ public class HandsController : MonoBehaviour {
 
             Vector3 newPos = new Vector3(rightHand.Position.X, rightHand.Position.Y, rightHand.Position.Z);
             transform.position = newPos;
+
+            Vector3 oldPos = new Vector3(transform.position.x, transform.position.x, transform.position.x);
+            print("The old Hands controller position is: " + oldPos);
+            print("The new hands ontroller postion is: " + newPos);
         }
 	}
 }

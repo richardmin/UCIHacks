@@ -397,6 +397,21 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec1f64fc0c8a64d0a893e76bb60f128f, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &804298485 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 2}
+  m_PrefabInternal: {fileID: 1748321170}
+--- !u!114 &804298486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 804298485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac5a69b54983f248884ba7131a8ee55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &932981871
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,6 +650,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1019009156}
   - 114: {fileID: 1019009157}
+  - 114: {fileID: 1019009158}
   m_Layer: 0
   m_Name: KinectPlayer
   m_TagString: Untagged
@@ -649,7 +665,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1019009155}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 0, z: 11.2174597}
+  m_LocalPosition: {x: 5, y: 0, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -665,6 +681,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f5f2cb6c5c74374aa6e486a8431617c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1019009158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1019009155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f583afdb570da4c99bd4d1c14c4c7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 171082, guid: 998cd50b634a2014ab6de3df29c8b67d, type: 2}
 --- !u!4 &1068613155 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400162, guid: 503c8a97734624269b63b882c4a6b7e5, type: 3}

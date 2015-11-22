@@ -9,6 +9,10 @@ public class KinectDataHandler : MonoBehaviour
     private BodyFrameReader _Reader;
     private Body[] _Data = null;
 
+    private System.DateTime _initTime;
+    private bool _offsetRecorded = false;
+    private Vector3 _DataOffset;
+
     public Body[] GetData()
     {
         return _Data;
@@ -17,6 +21,9 @@ public class KinectDataHandler : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        _initTime = System.DateTime.Now;
+        _initTime = _initTime.AddSeconds(10);
+        
         // Gets the sensor object from the kinect
         _Sensor = KinectSensor.GetDefault();
 
@@ -32,6 +39,29 @@ public class KinectDataHandler : MonoBehaviour
             }
         }
 
+        if (!_offsetRecorded)
+        {
+            if (System.DateTime.Now.Subtract(_initTime) > new System.TimeSpan(0, 0, 1))
+            {
+                _DataOffset = new Vector3(8-transform.position.x, 1-transform.position.y, 11-transform.position.z);
+                _offsetRecorded = true;
+            }
+        }
+
+        if (_offsetRecorded)
+        {
+            transform.Translate(_DataOffset);
+            //for (int i = 0; i < _Data.Length; i++)
+            //{
+            //    Body body = _Data[i];
+            //    foreach (JointType key in body.Joints.Keys)
+            //    {
+                    
+            //    }
+            //}
+                
+        }
+
         GameObject FPSCamera = GameObject.Find("RigidBodyFPSController");
         Vector3 initPos = new Vector3(FPSCamera.transform.position.x,FPSCamera.transform.position.y,FPSCamera.transform.position.z);
         transform.position = initPos;
@@ -40,6 +70,7 @@ public class KinectDataHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (_Reader != null)
         {
             var frame = _Reader.AcquireLatestFrame();
@@ -55,6 +86,9 @@ public class KinectDataHandler : MonoBehaviour
                 frame = null;
             }
         }
+
+        Vector3 pos = new Vector3(transform.position.x, transform.position.x, transform.position.x);
+        print("Current kinect player position is: " + pos);
     }
 
 
