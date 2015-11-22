@@ -49,7 +49,8 @@ public class testBodyView : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+        transform.position = new Vector3();
         //transform.Rotate(0f, 180f, 0);
     }
 

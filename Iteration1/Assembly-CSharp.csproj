@@ -138,6 +138,7 @@
      <Compile Include="Assets\Scripts\Kinect\HandsController.cs" />
      <Compile Include="Assets\Scripts\Kinect\KinectDataHandler.cs" />
      <Compile Include="Assets\Scripts\Kinect\OtherFPSBodyController.cs" />
+     <Compile Include="Assets\Scripts\Kinect\SpanishCubes.cs" />
      <Compile Include="Assets\Scripts\Kinect\SpawnAtPosition.cs" />
      <Compile Include="Assets\Scripts\Kinect\testBodyView.cs" />
      <Compile Include="Assets\Scripts\Knife.cs" />

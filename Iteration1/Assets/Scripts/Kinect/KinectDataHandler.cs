@@ -13,6 +13,8 @@ public class KinectDataHandler : MonoBehaviour
     private bool _offsetRecorded = false;
     private Vector3 _DataOffset;
 
+    private GameObject _Cube;
+
     public Body[] GetData()
     {
         return _Data;
@@ -39,32 +41,38 @@ public class KinectDataHandler : MonoBehaviour
             }
         }
 
-        if (!_offsetRecorded)
-        {
-            if (System.DateTime.Now.Subtract(_initTime) > new System.TimeSpan(0, 0, 1))
-            {
-                _DataOffset = new Vector3(8-transform.position.x, 1-transform.position.y, 11-transform.position.z);
-                _offsetRecorded = true;
-            }
-        }
+        _Cube = GameObject.Find("Cube");
 
-        if (_offsetRecorded)
-        {
-            transform.Translate(_DataOffset);
-            //for (int i = 0; i < _Data.Length; i++)
-            //{
-            //    Body body = _Data[i];
-            //    foreach (JointType key in body.Joints.Keys)
-            //    {
+        //if (!_offsetRecorded)
+        //{
+        //    if (System.DateTime.Now.Subtract(_initTime) > new System.TimeSpan(0, 0, 1))
+        //    {
+        //        _DataOffset = new Vector3(10-transform.position.x, -transform.position.y, -4-transform.position.z);
+        //        _offsetRecorded = true;
+        //    }
+        //}
+
+        //if (_offsetRecorded)
+        //{
+        //    transform.Translate(_DataOffset);
+        //    //for (int i = 0; i < _Data.Length; i++)
+        //    //{
+        //    //    Body body = _Data[i];
+        //    //    foreach (JointType key in body.Joints.Keys)
+        //    //    {
                     
-            //    }
-            //}
+        //    //    }
+        //    //}
                 
-        }
+        //}
 
-        GameObject FPSCamera = GameObject.Find("Main Camera");
-        Vector3 initPos = new Vector3(FPSCamera.transform.position.x,FPSCamera.transform.position.y,FPSCamera.transform.position.z);
-        transform.position = initPos;
+        GameObject FPSCamera = GameObject.Find("Cube");
+        Vector3 initPos = new Vector3(FPSCamera.transform.position.x, FPSCamera.transform.position.y, FPSCamera.transform.position.z);
+        //transform.position = initPos;
+        transform.position = new Vector3(5.3f, 1.35f, 11f);
+        transform.Rotate(0f, 180f, 0f);
+
+        
     }
 
     // Update is called once per frame
@@ -87,8 +95,35 @@ public class KinectDataHandler : MonoBehaviour
             }
         }
 
-        Vector3 pos = new Vector3(transform.position.x, transform.position.x, transform.position.x);
-        print("Current kinect player position is: " + pos);
+        print("Kinect Player position: " + transform.position);
+        //_Cube.transform.position = transform.position;
+
+
+        //if (!_offsetRecorded)
+        //{
+        //    if (System.DateTime.Now.Subtract(_initTime) > new System.TimeSpan(0, 0, 1))
+        //    {
+        //        _DataOffset = new Vector3(8 - transform.position.x, 1 - transform.position.y, 11 - transform.position.z);
+        //        _offsetRecorded = true;
+        //    }
+        //}
+
+        //if (_offsetRecorded)
+        //{
+        //    transform.Translate(_DataOffset);
+        //    //for (int i = 0; i < _Data.Length; i++)
+        //    //{
+        //    //    Body body = _Data[i];
+        //    //    foreach (JointType key in body.Joints.Keys)
+        //    //    {
+
+        //    //    }
+        //    //}
+
+        //}
+
+        //Vector3 pos = new Vector3(transform.position.x, transform.position.x, transform.position.x);
+        //print("Current kinect player position is: " + pos);
     }
 
 
