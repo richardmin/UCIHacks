@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class MyBalloon : MonoBehaviour {
-	public GameObject knife;
 	int tickCounter = 0;
 	System.Random rnd = new System.Random ();
 	// Use this for initialization
