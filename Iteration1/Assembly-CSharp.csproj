@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_5_2_3;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;CROSS_PLATFORM_INPUT</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_2_3;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -38,13 +38,98 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\KinectPackages\BaseKinect\CameraIntrinsics.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\CollectionMap.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\EventPump.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\ExceptionHelper.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\INativeWrapper.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\KinectBuffer.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\KinectSpecialCases.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\NativeObjectCache.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\NativeWrapper.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\SmartGCHandle.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\ThreadSafeDictionary.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Data\PropertyChangedEventArgs.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\Activity.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\Appearance.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\AudioBeam.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\AudioBeamFrame.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\AudioBeamFrameArrivedEventArgs.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\AudioBeamFrameList.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\AudioBeamFrameReader.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\AudioBeamFrameReference.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\AudioBeamMode.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\AudioBeamSubFrame.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\AudioBodyCorrelation.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\AudioSource.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\Body.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\BodyFrame.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\BodyFrameArrivedEventArgs.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\BodyFrameReader.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\BodyFrameReference.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\BodyFrameSource.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\BodyIndexFrame.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\BodyIndexFrameArrivedEventArgs.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\BodyIndexFrameReader.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\BodyIndexFrameReference.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\BodyIndexFrameSource.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\CameraSpacePoint.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\ColorCameraSettings.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\ColorFrame.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\ColorFrameArrivedEventArgs.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\ColorFrameReader.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\ColorFrameReference.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\ColorFrameSource.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\ColorImageFormat.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\ColorSpacePoint.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\CoordinateMapper.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\CoordinateMappingChangedEventArgs.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\DepthFrame.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\DepthFrameArrivedEventArgs.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\DepthFrameReader.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\DepthFrameReference.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\DepthFrameSource.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\DepthSpacePoint.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\DetectionResult.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\Expression.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\FrameCapturedEventArgs.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\FrameCapturedStatus.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\FrameDescription.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\FrameEdges.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\FrameSourceTypes.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\HandState.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\InfraredFrame.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\InfraredFrameArrivedEventArgs.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\InfraredFrameReader.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\InfraredFrameReference.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\InfraredFrameSource.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\IsAvailableChangedEventArgs.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\Joint.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\JointOrientation.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\JointType.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\KinectAudioCalibrationState.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\KinectCapabilities.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\KinectSensor.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\KinectUnityAddinUtils.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\LongExposureInfraredFrame.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\LongExposureInfraredFrameArrivedEventArgs.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\LongExposureInfraredFrameReader.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\LongExposureInfraredFrameReference.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\LongExposureInfraredFrameSource.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\MultiSourceFrame.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\MultiSourceFrameArrivedEventArgs.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\MultiSourceFrameReader.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\MultiSourceFrameReference.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\TrackingConfidence.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\TrackingState.cs" />
+     <Compile Include="Assets\KinectPackages\BaseKinect\Windows\Kinect\Vector4.cs" />
      <Compile Include="Assets\Scripts\Balloon.cs" />
      <Compile Include="Assets\Scripts\Book.cs" />
      <Compile Include="Assets\Scripts\InventoryManager.cs" />
@@ -53,14 +138,17 @@
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
- <Reference Include="UnityEngine.Networking">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Cecil">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
