@@ -12,7 +12,7 @@ public class UseAimAndBehavior : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-            
+        camera = GameObject.Find("RigidBodyFPSController");
 	}
 	
 	// Update is called once per frame
